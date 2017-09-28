@@ -45,8 +45,14 @@ $(document).ready(function() {
     inputPlayer.roundScore = 0;
     $("#outputRoundScore1").text("Round Score: "+ inputPlayer.roundScore);
     $("#outputTotalScore1").text("Total: " + inputPlayer.totalScore);
-    if (inputPlayer.totalScore >= 100) {
+    if (inputPlayer.totalScore >= 10) {
       alert("You are winner!")
+      $("#outputLastRoll1").empty();
+      $("#outputRoundScore1").empty();
+      $("#outputTotalScore1").empty();
+      $("#outputLastRoll2").empty();
+      $("#outputRoundScore2").empty();
+      $("#outputTotalScore2").empty();
       }
 });
 
@@ -66,6 +72,12 @@ $(document).ready(function() {
   $("#outputTotalScore2").text("Total: " + inputPlayer2.totalScore);
   if (inputPlayer2.totalScore >= 100) {
     alert("Player 2: You're winner!")
+    $("#outputLastRoll1").empty();
+    $("#outputRoundScore1").empty();
+    $("#outputTotalScore1").empty();
+    $("#outputLastRoll2").empty();
+    $("#outputRoundScore2").empty();
+    $("#outputTotalScore2").empty();
     }
 });
 });
