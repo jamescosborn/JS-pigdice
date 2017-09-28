@@ -16,6 +16,7 @@ Player.prototype.bust = function (roundRoll) {
   }
 $(document).ready(function() {
   var inputPlayer = new Player ();
+  // Submit Button
   $("#button1").click(function(event) {
   event.preventDefault();
   var diceRoll = inputPlayer.dice();
@@ -26,6 +27,7 @@ $(document).ready(function() {
   $("#output2").text("Round Score: "+ inputPlayer.roundScore);
   $("#output").text("Last Roll: " + diceRoll);
   });
+  // Hold button
   $("#button2").click(function(event) {
     event.preventDefault();
     inputPlayer.totalScore = inputPlayer.totalScore + inputPlayer.roundScore;
@@ -33,6 +35,9 @@ $(document).ready(function() {
     $("#output2").text("Round Score: "+ inputPlayer.roundScore);
     $("#output3").text("Total: " + inputPlayer.totalScore);
     console.log(inputPlayer.totalScore);
+    if (inputPlayer.totalScore >= 100) {
+      alert("You are winner!")
+    }
 });
 });
 // Make a new function for other buttons
