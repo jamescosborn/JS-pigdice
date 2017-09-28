@@ -45,8 +45,8 @@ $(document).ready(function() {
     inputPlayer.roundScore = 0;
     $("#outputRoundScore1").text("Round Score: "+ inputPlayer.roundScore);
     $("#outputTotalScore1").text("Total: " + inputPlayer.totalScore);
-    if (inputPlayer.totalScore >= 10) {
-      alert("You are winner!")
+    if (inputPlayer.totalScore >= 100) {
+      alert("Player One: A winner is you!")
       $("#outputLastRoll1").empty();
       $("#outputRoundScore1").empty();
       $("#outputTotalScore1").empty();

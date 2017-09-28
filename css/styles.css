@@ -9,3 +9,15 @@ h1 {
   padding-top: 25px;
   padding-bottom: 25px;
 }
+
+body {
+  font-family: cursive;
+  background-image: url("../img/pig.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.red {
+  color: red;
+  text-shadow: 2px 2px #000000;
+}
