@@ -49,6 +49,25 @@ $(document).ready(function() {
       alert("You are winner!")
       }
 });
+
+  $("#button3").click(function(event) {
+  event.preventDefault();
+  var diceRoll = inputPlayer2.dice();
+  inputPlayer2.bust(diceRoll);
+  $("#outputLastRoll2").text("Last Roll: " + diceRoll);
+  $("#outputRoundScore2").text("Round Score: "+ inputPlayer2.roundScore);
+  });
+// Hold button
+  $("#button4").click(function(event) {
+  event.preventDefault();
+  inputPlayer2.totalScore = inputPlayer2.totalScore + inputPlayer2.roundScore;
+  inputPlayer2.roundScore = 0;
+  $("#outputRoundScore2").text("Round Score: "+ inputPlayer2.roundScore);
+  $("#outputTotalScore2").text("Total: " + inputPlayer2.totalScore);
+  if (inputPlayer2.totalScore >= 100) {
+    alert("Player 2: You're winner!")
+    }
+});
 });
 // Make a new function for other buttons
 // Ask what Round Roll is, why does this callback work?
