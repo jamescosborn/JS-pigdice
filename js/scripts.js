@@ -12,21 +12,28 @@ Player.prototype.dice = function () {
 Player.prototype.bust = function (roundRoll) {
   if (roundRoll === 1) {
     this.roundScore = 0;
-    } else {
-    this.totalScore = this.roundScore + this.totalScore;
     }
   }
 $(document).ready(function() {
   var inputPlayer = new Player ();
   $("#button1").click(function(event) {
   event.preventDefault();
-  var tryFirstRoll = inputPlayer.dice();
-  inputPlayer.bust(tryFirstRoll);
-  console.log(tryFirstRoll);
+  var diceRoll = inputPlayer.dice();
+  inputPlayer.bust(diceRoll);
+  console.log(diceRoll);
   console.log(inputPlayer.roundScore);
-  $("#output2").text(inputPlayer.roundScore);
-  $("#output").text(tryFirstRoll);
+  console.log(inputPlayer.totalScore);
+  $("#output2").text("Round Score: "+ inputPlayer.roundScore);
+  $("#output").text("Last Roll: " + diceRoll);
   });
+  $("#button2").click(function(event) {
+    event.preventDefault();
+    inputPlayer.totalScore = inputPlayer.totalScore + inputPlayer.roundScore;
+    inputPlayer.roundScore = 0;
+    $("#output2").text("Round Score: "+ inputPlayer.roundScore);
+    $("#output3").text("Total: " + inputPlayer.totalScore);
+    console.log(inputPlayer.totalScore);
+});
 });
 // Make a new function for other buttons
 // Ask what Round Roll is, why does this callback work?
