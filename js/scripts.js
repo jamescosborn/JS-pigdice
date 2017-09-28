@@ -18,13 +18,14 @@ Player.prototype.bust = function (roundRoll) {
   }
 $(document).ready(function() {
   var inputPlayer = new Player ();
-  $("#form1").submit(function(event) {
+  $("#button1").click(function(event) {
   event.preventDefault();
   var tryFirstRoll = inputPlayer.dice();
   inputPlayer.bust(tryFirstRoll);
   console.log(tryFirstRoll);
   console.log(inputPlayer.roundScore);
-    $("#output").text(tryFirstRoll);
+  $("#output2").text(inputPlayer.roundScore);
+  $("#output").text(tryFirstRoll);
   });
 });
 // Make a new function for other buttons
