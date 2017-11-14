@@ -1,0 +1,25 @@
+{
+  "name": "pigg",
+  "version": "1.0.0",
+  "description": "Specifications:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamescosborn/pigg.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamescosborn/pigg/issues"
+  },
+  "homepage": "https://github.com/jamescosborn/pigg#readme",
+  "devDependencies": {
+    "browserify": "^14.5.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
