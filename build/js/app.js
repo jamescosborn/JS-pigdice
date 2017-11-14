@@ -29,10 +29,12 @@ Player2.prototype.bust = function (roundRoll) {
     }
 }
 
-exports.pigDiceModule = Pigdice;
+exports.player1Module = Player1;
+exports.player2Module = Player2;
 
 },{}],2:[function(require,module,exports){
-var Pigdice = require('./../js/pigdice.js').pigDiceModule;
+var Player1 = require('./../js/pigdice.js').player1Module;
+var Player2 = require('./../js/pigdice.js').player2Module;
 
 $(document).ready(function() {
 var inputPlayer = new Player1 ();

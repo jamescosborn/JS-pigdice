@@ -28,4 +28,5 @@ Player2.prototype.bust = function (roundRoll) {
     }
 }
 
-exports.pigDiceModule = Pigdice;
+exports.player1Module = Player1;
+exports.player2Module = Player2;

@@ -1,4 +1,5 @@
-var Pigdice = require('./../js/pigdice.js').pigDiceModule;
+var Player1 = require('./../js/pigdice.js').player1Module;
+var Player2 = require('./../js/pigdice.js').player2Module;
 
 $(document).ready(function() {
 var inputPlayer = new Player1 ();
