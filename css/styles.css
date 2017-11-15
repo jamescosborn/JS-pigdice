@@ -11,8 +11,8 @@ h1 {
 }
 
 body {
-  font-family: cursive;
-  background-image: url("../img/pig.jpg");
+  /*font-family: cursive;*/
+  background-image: url("../../img/pig.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }

@@ -66,3 +66,7 @@ $(document).ready(function(){
     $('#solution').prepend('<p>Thank you, ' + email + ' thousands of junkmail   you shall receive</p>');
   });
 });
+
+$(document).ready(function(){
+  $('#time').text(moment());
+});

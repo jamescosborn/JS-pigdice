@@ -102,4 +102,8 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+  $('#time').text(moment());
+});
+
 },{"./../js/pigdice.js":1}]},{},[2]);
